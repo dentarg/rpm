@@ -37,13 +37,6 @@ before_script: ./test/script/before_script/install_mongodb.sh
 
 script: ./test/script/ci.sh
 
-branches:
-  only:
-    - master
-    - dev
-    - release
-    - RUBY-2227_w3c_trace_context_poc
-
 rvm:
   # Run slowest builds first to try and optimize overall cycle time.
   - jruby-9.2.6.0
